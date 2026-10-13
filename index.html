@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>COFFEE // Indian Artisan Roastery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+ <div id="video" class="bg-video-wrapper">
+  <iframe src="https://www.youtube.com/embed/0jIeCAOkgcQ?autoplay=1&mute=1&loop=1&playlist=0jIeCAOkgcQ&controls=0&showinfo=0&rel=0&iv_load_policy=3&disablekb=1&modestbranding=1&playsinline=1" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+     <div id="overlay" class="video-overlay"></div>
+ </div>
+
+   <header id="header" class="nav-header">
+     <a href="#" id="brand" class="brand-container">
+   <div id="logo" class="brand-logo-icon">
+    <svg viewBox="0 0 24 24">
+          <path d="M2,21H20V19H2M20,8H18V5H20M20,3H4V13A4,4 0 0,0 8,17H14A4,4 0 0,0 18,13V10H20A2,2 0 0,0 22,8V5C22,3.89 21.1,3 20,3Z" />
+    </svg>
+   </div>
+   <div id="title" class="brand-text-wrap">
+     <span class="brand-title">Avi's Roast</span>
+     <span class="brand-tagline">Artisan Roastery India</span>
+   </div>
+     </a>
+
+  <ul id="navbar" class="nav-menu">
+   <li class="nav-item"><a href="#hero">Home</a></li>
+     <li class="nav-item"><a href="#roasts">Brews</a></li>
+   <li class="nav-item"><a href="#info">Hours</a></li>
+     <li class="nav-item"><a href="#info">Location</a></li>
+  </ul>
+
+     <div id="actions" class="nav-actions">
+       <button id="explore" class="btn-nav-order" onclick="document.getElementById('roasts').scrollIntoView({behavior:'smooth'})">Explore</button>
+     </div>
+   </header>
+
+ <main id="main">
+   <section id="hero" class="hero-section">
+     <div id="pill" class="hero-pill">
+       Roasted In India // Micro-Batch Estates
+     </div>
+   <h1 id="heading" class="hero-title">
+     Pure <span class="gold-accent">Coffee</span>, Fire Roasted Crema.
+   </h1>
+     <p id="description" class="hero-description">
+       Single-origin beans handpicked from Chikmagalur and Araku Valley estates, fire-roasted in small batches. Bold dark chocolate notes, thick golden crema, and the warm spirit of Indian artisan coffee.
+     </p>
+   <div id="buttons" class="hero-btn-group">
+     <a href="#roasts" class="btn-hero-primary">Featured Brews</a>
+     <a href="#info" class="btn-hero-secondary">Atelier Hours</a>
+   </div>
+
+   <div id="badges" class="hero-badges-row">
+     <div class="badge-feature">
+       <div class="badge-feature-icon">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+           <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+           <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+           <line x1="6" y1="2" x2="6" y2="4"/>
+           <line x1="10" y1="2" x2="10" y2="4"/>
+           <line x1="14" y1="2" x2="14" y2="4"/>
+         </svg>
+       </div>
+       <div class="badge-feature-text">
+         <h4>100% Indian Arabica</h4>
+         <p>Chikmagalur & Coorg shade-grown beans</p>
+       </div>
+     </div>
+     <div class="badge-feature">
+       <div class="badge-feature-icon">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+           <path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 3z"/>
+         </svg>
+       </div>
+       <div class="badge-feature-text">
+         <h4>Fire Roasted Batches</h4>
+         <p>Slow roasted to unlock deep caramelized sweetness</p>
+       </div>
+     </div>
+     <div class="badge-feature">
+       <div class="badge-feature-icon">
+         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+           <path d="m12 3-1.9 5.8a2 2 0 0 1-1.3 1.3L3 12l5.8 1.9a2 2 0 0 1 1.3 1.3L12 21l1.9-5.8a2 2 0 0 1 1.3-1.3L21 12l-5.8-1.9a2 2 0 0 1-1.3-1.3L12 3z"/>
+         </svg>
+       </div>
+       <div class="badge-feature-text">
+         <h4>Dense Golden Crema</h4>
+         <p>Hand-pulled 9-bar pressure extractions</p>
+       </div>
+     </div>
+   </div>
+   </section>
+
+   <section id="roasts" class="featured-section">
+     <div id="intro" class="featured-header">
+       <div class="featured-kicker">Signature Selections</div>
+       <h2 class="featured-title">The Daily Pulls</h2>
+     </div>
+
+     <div id="grid" class="featured-grid">
+       <div class="featured-card">
+         <div class="card-top-row">
+           <span class="card-tag">Dark Roast</span>
+           <span class="card-price">₹260</span>
+         </div>
+         <h3 class="card-title">Chikmagalur Estate Roast</h3>
+         <p class="card-desc">Slow-extracted dark roast from Karnataka hills boasting deep notes of smoky cacao, roasted hazelnut, and an unctuous velvety mouthfeel.</p>
+       </div>
+
+       <div class="featured-card">
+         <div class="card-top-row">
+           <span class="card-tag">House Signature</span>
+           <span class="card-price">₹210</span>
+         </div>
+         <h3 class="card-title">Gold Crema Espresso</h3>
+         <p class="card-desc">Intense double shot of Coorg estate arabica crowned with a dense honeycomb layer of golden crema. Bold, smooth, and naturally sweet.</p>
+       </div>
+
+       <div class="featured-card">
+         <div class="card-top-row">
+           <span class="card-tag">24H Steep</span>
+           <span class="card-price">₹280</span>
+         </div>
+         <h3 class="card-title">Araku Valley Cold Extract</h3>
+         <p class="card-desc">Ice-cold 24-hour immersion brew from eastern ghats highlighting delicate stone fruit acidity and crisp dark chocolate finish.</p>
+       </div>
+     </div>
+   </section>
+
+   <section id="info" class="info-bar-section">
+     <div class="info-col">
+       <h3>Atelier Hours</h3>
+       <p>Monday – Friday: 7:00 AM – 11:00 PM</p>
+       <p>Saturday – Sunday: 8:00 AM – 11:30 PM</p>
+     </div>
+     <div class="info-col">
+       <h3>Location</h3>
+       <p>Room No. 510, Tower E</p>
+       <p>Krishna Valley, Mathura</p>
+     </div>
+     <div class="info-col">
+       <h3>Fresh Roast Days</h3>
+       <p>Small-batch fire roasting Tuesday & Friday</p>
+       <p>Whole Bean & Custom Grind Available</p>
+     </div>
+   </section>
+ </main>
+
+ <footer id="footer" class="site-footer">
+   <div id="author" class="footer-avi">made by avi</div>
+   <div id="tagline" class="footer-sub">indian single origin · fire roasted · artisan atelier</div>
+ </footer>
+
+</body>
+</html>
